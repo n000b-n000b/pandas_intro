@@ -24,11 +24,12 @@ print (d.head())
 
 #What is the last row in the data set?
 print(" ")
+def lastrow_loc():
+  row_number = d.shape[0]
+  get_last =row_number - 1
+  print(d.loc[get_last])
+  print(" ")
+lastrow_loc()
 
-row_number = d.shape[0]
-get_last =row_number - 1
-print(d.loc[get_last])
-
-#What are the values of rows 34, 66, and 53?
-print(" ")
-print(d.iloc[[33,65,52]])
+#How to list a series of specific columns.
+  print(d.iloc[[33,65,52]])
